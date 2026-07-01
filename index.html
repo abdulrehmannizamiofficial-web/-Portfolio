@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Rehman Nizami — Full Stack Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-mesh"></div>
+
+<nav class="navbar">
+  <a href="#hero" class="brand">Abdul Rehman <span>Nizami</span></a>
+  <div class="nav-links" id="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="eyebrow">Welcome to my portfolio</div>
+        <h1>Abdul Rehman<br><span class="gradient-text">Nizami</span></h1>
+        <div class="role">Full Stack Web Developer</div>
+        <p class="bio">I build modern, responsive, and user-friendly web applications — clean, efficient, and scalable, using the latest web technologies. Always learning, always shipping.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#" class="btn btn-ghost">Download resume</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/abdulrehmannizamiofficial-web" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/abdul-rehman-nizami-6070a240b" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:abdulrehmannizamiofficial@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="profile.jpg" alt="Abdul Rehman Nizami">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="eyebrow">About Me</div>
+    <h2 class="section-heading">A bit about me</h2>
+    <p>I'm a passionate full stack web developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy creating clean, efficient, and scalable solutions using the latest web technologies — and I'm always eager to learn new skills, take on challenging projects, and continuously improve my craft.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="eyebrow">Selected Work</div>
+    <h2 class="section-heading">Projects</h2>
+
+    <div class="project-card">
+      <div class="project-media"><img src="amazon-clone-screenshot.jpg" alt="Amazon Clone project screenshot"></div>
+      <div class="project-body">
+        <div class="project-index">Featured Project</div>
+        <h3>Amazon Clone</h3>
+        <p class="desc">A responsive Amazon-inspired e-commerce web application that replicates the core shopping experience — modern UI, product listings, shopping cart functionality, and a smooth, responsive user experience.</p>
+        <div class="stack">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React.js</span>
+          <span class="chip">Firebase</span>
+          <span class="chip">Tailwind CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/abdulrehmannizamiofficial-web/Amazon-clone" target="_blank" rel="noopener">View code →</a>
+          <a href="#" target="_blank" rel="noopener">Live demo →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-projects">
+      More projects coming soon — this space is ready for two more project cards.
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="eyebrow">Toolkit</div>
+    <h2 class="section-heading">Skills &amp; tools</h2>
+    <div class="skills-groups">
+      <div class="skill-row">
+        <span class="skill-chip">HTML5</span>
+        <span class="skill-chip">CSS3</span>
+        <span class="skill-chip">JavaScript (ES6+)</span>
+        <span class="skill-chip">React.js</span>
+        <span class="skill-chip">Tailwind CSS</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-chip">Firebase</span>
+        <span class="skill-chip">REST APIs</span>
+        <span class="skill-chip">Responsive Web Design</span>
+        <span class="skill-chip">Git</span>
+        <span class="skill-chip">GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="eyebrow">Get in touch</div>
+    <div class="contact-box">
+      <h2>Let's build<br><span class="gradient-text">something together.</span></h2>
+      <p>Have a project in mind, or just want to say hi? My inbox is open.</p>
+      <div class="contact-list">
+        <a class="contact-row" href="mailto:abdulrehmannizamiofficial@gmail.com">
+          <div><div class="label">EMAIL</div><div class="value">abdulrehmannizamiofficial@gmail.com</div></div>
+          <div class="arrow">→</div>
+        </a>
+        <a class="contact-row" href="https://github.com/abdulrehmannizamiofficial-web" target="_blank" rel="noopener">
+          <div><div class="label">GITHUB</div><div class="value">abdulrehmannizamiofficial-web</div></div>
+          <div class="arrow">→</div>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/abdul-rehman-nizami-6070a240b" target="_blank" rel="noopener">
+          <div><div class="label">LINKEDIN</div><div class="value">Abdul Rehman Nizami</div></div>
+          <div class="arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>Built by Abdul Rehman Nizami — © 2026</footer>
+</main>
+
+<script>
+  const sections = ['about','projects','skills','contact'].map(id=>document.getElementById(id));
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        const id = entry.target.id;
+        navLinks.forEach(t=>t.classList.toggle('active', t.getAttribute('href') === '#'+id));
+      }
+    });
+  }, {rootMargin:'-45% 0px -50% 0px', threshold:0});
+
+  sections.forEach(s=>s && observer.observe(s));
+</script>
+
+</body>
+</html>
